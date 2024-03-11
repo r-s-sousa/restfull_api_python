@@ -1,0 +1,26 @@
+### get books
+GET http://localhost:5000/books
+
+### get book
+GET http://localhost:5000/books/1
+
+### add book
+POST http://localhost:5000/books
+Content-Type: application/json
+
+{
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald"
+}
+
+### update book
+PUT http://localhost:5000/books/1
+Content-Type: application/json
+
+{
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald"
+}
+
+### delete book
+DELETE http://localhost:5000/books/1
